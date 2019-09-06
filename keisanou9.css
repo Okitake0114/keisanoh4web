@@ -1,0 +1,104 @@
+h1,.lifePoints,.players,.pluslife,.minuslife,.why,
+.name,.button,.newbutton,.content,.contents {
+    text-align: center;
+}
+.content,.players p,.lifePoints p,.pluslife p,
+.minuslife p{
+    display: inline-block;
+}
+h1{
+    font-family: serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: darkgreen
+}
+.name{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.lifePoint{
+    font-size: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.lifePoints p{
+    width: 220px;
+    height: 0%;
+}
+.normal{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+footer{
+    text-align: right;
+}
+
+@media (max-width: 540px) {
+    h1{
+        margin-top: 10px;
+        margin-bottom: 0%;
+    }
+}
+@media (max-width: 500px) {
+    .plus,.minus,.name{
+        width: 150px;
+    }
+
+}
+@media (max-width: 480px) {
+    .plus,.minus,.name{
+        width: 130px;
+    }
+    *{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+@media (max-width: 465px){
+    .plus,.minus,.name{
+        width: 90px;
+    }
+    .lifePoints p{
+        width: 160px;
+    }
+}
+@media (max-width: 360px){
+    .yohaku{
+        width: 130px;
+    }
+    .normal{
+        width: 100px;
+    }
+    .plus,.minus,.name{
+        width: 60px;
+    }
+    .lifePoints p{
+        width: 140px;
+    }
+}
+@media(max-width:325px) {
+    h1{
+        font-size: 40px;
+    }
+    .lifePoint{
+        font-size: 40px;
+    }
+    .lifePoints p{
+        width: 130px;
+    }
+    .normal{
+        width: 80px;
+    }
+}
+body,h1{
+    background-color: rgb(185, 255, 212)
+}
+.buttons {
+    background-color: rgb(27, 201, 105)
+}
+.plus,.minus,.name{
+    background-color: rgb(222, 241, 190);
+    color: rgb(7, 7, 7);
+}
