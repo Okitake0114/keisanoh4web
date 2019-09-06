@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="keisanou9.css">
+    <link rel="shortcut icon" href="img/uramen.gif">
+    <script src="keisanou9.js"></script>
+    <title>計算王forWeb ver0.9</title>
+    <meta name="description" content="遊戯王のWEB版ライフポイント計算ツールです。WEBページ作成の練習のために作ってます。">
+</head>
+
+<body>
+    <h1>計算王</h1>
+    <div class="players">
+        <p class="yohaku"><input type="text" class="name" value="Player1" id="name1"></p>
+        <p class="yohaku"><input type="text" class="name" value="Player2" id="name2"></p>
+    </div>
+    <div class="lifePoints">
+        <p id="life1" class="lifePoint">8000</p>
+        <p id="life2" class="lifePoint">8000</p>
+    </div>
+
+    <div class="pluslife">
+        <form>
+            <p class="normal">＋<input type="text" class="plus" id="plus1" value="0"></p>
+            <p class="normal">＋<input type="text" class="plus" id="plus2" value="0"></p>
+        </form>
+    </div>
+    <div class="minuslife">
+        <form>
+            <p class="normal">－<input type="text" class="minus" id="minus1" value="0"></p>
+            <p class="normal">－<input type="text" class="minus" id="minus2" value="0"></p>
+        </form>
+    </div>
+    <div class="button">
+        <input type="button" onclick="calc()" id="button" value="テレレレレレンッ！" style="display: inline-block"
+            class="buttons">
+    </div>
+    <div class="newbutton">
+        <input type="button" onclick="reset()" id="newbutton" value="GO TO NEXT GAME" style="display: none"
+            class="buttons">
+    </div>
+    <div>
+        <h2 id="why" class="why"></h2>
+        <h2 id="comment" class="why"></h2>
+    </div>
+    <div class="contents">
+        <div class="content">
+            <p>
+                <form><input class="contentbutton" type="button" value="ダイスロール！" onclick="getDice1();"></form>
+            </p>
+            <p>
+                <span><img src="img/6d.gif" name="imgdice1" alt="imgdice1" id="pic"></span>
+                <span id="condice1"></span>
+            </p>
+        </div>
+        <div class="content">
+            <p>
+                <form><input class="contentbutton" type="button" value="コイントス！" onclick="cointoss();"></form>
+            </p>
+            <p>
+                <spam><img src="img/head.gif" alt="imgcoin1" id="pic2"></spam>
+            </p>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>＊計算の場所には半角数字のみでお願いします＊</p>
+</footer>
+
+</html>
